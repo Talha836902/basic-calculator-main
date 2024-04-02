@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Calculator</h1>
+        </div>
+
+        <div class="inp">
+            <input type="text" id="output" readonly>
+        </div>
+
+        <div class="buttons">
+            <div class="row">
+                <button onclick="clr()" class="lightgreybtn">AC</button>
+                <button onclick="del()" class="lightgreybtn">Del</button>
+                <button onclick="press('%')" class="lightgreybtn">%</button>
+                <button onclick="press('/')" class="orangebtn">÷</button>
+            </div>
+            <div class="row">
+                <button onclick="press(7)" class="lightblackbtn">7</button>
+                <button onclick="press(8)" class="lightblackbtn">8</button>
+                <button onclick="press(9)" class="lightblackbtn">9</button>
+                <button onclick="press('*')" class="orangebtn">x</button>
+            </div>
+            <div class="row">
+                <button onclick="press(4)" class="lightblackbtn">4</button>
+                <button onclick="press(5)" class="lightblackbtn">5</button>
+                <button onclick="press(6)" class="lightblackbtn">6</button>
+                <button onclick="press('-')" class="orangebtn">-</button>
+            </div>
+            <div class="row">
+                <button onclick="press(1)" class="lightblackbtn">1</button>
+                <button onclick="press(2)" class="lightblackbtn">2</button>
+                <button onclick="press(3)" class="lightblackbtn">3</button>
+                <button onclick="press('+')" class="orangebtn">+</button>
+            </div>
+            <div class="row">
+                <button onclick="press(0)" class="lightblackbtn">0</button>
+                <button onclick="press('00')" class="lightblackbtn">00</button>
+                <button onclick="press('.')" class="lightblackbtn">.</button>
+                <button onclick="result()" id="result" class="orangebtn">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
